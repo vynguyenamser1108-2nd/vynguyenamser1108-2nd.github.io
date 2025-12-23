@@ -1,0 +1,188 @@
+/* Toàn trang */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #e3e9f7;
+    color: #222222;
+    line-height: 1.7;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+h1 {
+
+    font-family: "Arial Rounded MT Bold", "Segoe UI", Arial, sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #96cff2;
+    margin-bottom: 18px;
+}
+
+/* Tất cả bảng */
+table {
+    border-collapse: collapse;
+    border: 2px solid #8ea1e1;
+    
+}
+
+/* Bảng ngoài (có border trong HTML) */
+table[border] {
+    background-color: #ffffff;
+    border: 3px solid #6f88d9;
+    border-radius: 16px;
+}
+
+/* Bảng lồng bên trong */
+table table {
+    background-color: #f1f4ff;
+    border: 2px solid #a3b4ee;
+    border-radius: 12px;   
+    
+}
+
+/* Ô bảng */
+td {
+    padding: 18px;
+    text-align: center;
+    color: #3559c7;
+   
+
+}
+th {
+    font-family: "Arial Rounded MT Bold", "Segoe UI", Arial, sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #599bc4;
+    margin-bottom: 18px;
+}
+
+/* Hình ảnh */
+img {
+    width: 180px;
+    border-radius: 14px;
+    display: block;
+    margin: 0 auto 16px auto;
+}
+
+/* Link */
+a {
+    display: inline-block;
+    text-decoration: underline;
+    color: #3559c7;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+a:hover {
+    color: #d65a9a;
+}
+
+/* MENU CHÍNH */
+.menu {
+    position: relative;
+    display: inline-block;
+    margin: 16px;
+    font-family: inherit;
+}
+
+/* chữ Menu */
+.menu > span {
+    cursor: pointer;
+    font-weight: 600;
+    color: #3559c7;
+    padding: 8px 14px;
+    border: 2px solid #9fb0e3;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+/* khối sổ xuống */
+.menu-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 260px;
+    background-color: #f1f4ff;
+    border: 2px solid #9fb0e3;
+    border-radius: 12px;
+    margin-top: 6px;
+    z-index: 10;
+}
+
+/* link trong menu */
+.menu-content a {
+    display: block;
+    padding: 10px 14px;
+    text-decoration: none;
+    color: #3559c7;
+    font-size: 15px;
+}
+
+.menu-content a:hover {
+    background-color: #f7c6dc;
+    color: #222;
+}
+
+/* hover thì sổ xuống */
+.menu:hover .menu-content {
+    display: block;
+}
+.zoom-img {
+  width: 300px;
+  height: auto;
+  transition: transform 0.5s ease; /* Chuyển tiếp mượt mà */
+}
+
+.zoom-img:hover {
+  transform: scale(1.2); /* Phóng to 20% */
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Comic Sans MS', cursive; /* Font tròn trịa, dễ thương */
+  color: #6897ef; /* Hồng pastel (có thể đổi thành #87CEEB cho xanh pastel) */
+  text-align: center; /* Tùy chọn để cute hơn */
+}
+
+.custom-p {
+    color: #1d374d;                    /* Màu chữ xanh dương pastel sáng */
+    margin-left: 5%;                  /* Lề trái 5% */
+    margin-right: 5%;                 /* Lề phải 5% */
+    font-family: "Segoe UI", Arial, sans-serif;  /* Font nhẹ nhàng, bay bổng */
+    font-size: 18px;                  /* Cỡ chữ 18px */
+    font-weight: 300;                 /* Độ đậm nhẹ để tăng cảm giác airy */
+    line-height: 1.6;                 /* Khoảng cách dòng thoải mái */
+}
+
+.rounded-image {
+    height: 140px;          /* Chiều cao cố định cho tất cả ảnh */
+    width: auto;            /* Chiều rộng tự động để duy trì tỷ lệ */
+    border-radius: 14px;    /* Bo góc nhẹ với bán kính 14px */
+    display: inline-block;
+    margin: 0 auto 16px auto;
+    transition: transform 0.5s ease;  /* Hiệu ứng chuyển đổi mượt mà */
+}
+
+.rounded-image:hover {
+    transform: scale(1.2);  /* Phóng to ảnh lên 1.2 lần khi hover */
+}
+
+footer {
+            margin-top: auto;
+            background-color: #b5d1e3;
+            text-align: center;
+            padding: 10px;
+        }
+
+.image1 {
+    width: 400;            /* Chiều rộng tự động để duy trì tỷ lệ */
+    border-radius: 14px;    /* Bo góc nhẹ với bán kính 14px */
+    display: inline-block;
+    margin: 0 auto 16px auto;
+    transition: transform 0.5s ease;  /* Hiệu ứng chuyển đổi mượt mà */
+}
