@@ -5,9 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nguyen Le Phuong Vy's Website</title>
-  
+    <style>
+        .animated-bg {
+        background: linear-gradient(
+            120deg,
+            #a8edea, /* xanh mint pastel */
+            #eaf3f6,  /* xanh ngọc nhạt (thay tím) */
+            #f6e4ee   /* hồng pastel nhạt */
+        );
+        background-size: 300% 300%;
+        animation: gradientMove 12s ease-in-out infinite;
+        }
+
+        @keyframes gradientMove {
+        0%   { background-position: 0% 50%; }
+        50%  { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+        }
+        
+        .gradient-text {
+        background: linear-gradient(
+            120deg,
+            #6ecedb,  /* xanh pastel */
+            #8fd3e8,  /* xanh ngọc nhạt */
+            #f7b3d4   /* hồng pastel */
+        );
+        background-size: 200% 200%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+                background-clip: text;
+        }
+    </style>
 </head>
-<body>
+<body class="animated-bg">
     <div class="menu">
         <span>Menu</span>
         <div class="menu-content">
