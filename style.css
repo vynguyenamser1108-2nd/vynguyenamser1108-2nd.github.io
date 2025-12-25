@@ -7,6 +7,12 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    background:
+        radial-gradient(circle at 25% 30%, #d9f2ef, transparent 50%),
+        radial-gradient(circle at 75% 20%, #f3d6e8, transparent 50%),
+        radial-gradient(circle at 50% 80%, #e3e8fb, transparent 50%),
+        #f6f7fb;
+
 }
 
 h1 {
@@ -174,10 +180,16 @@ h2 {
 
 footer {
             margin-top: auto;
-            background-color: #b5d1e3;
             text-align: center;
-            padding: 10px;
-        }
+            background: linear-gradient(
+            120deg,
+            #d9f2ef,  /* xanh mint rất nhạt */
+            #cfd9f3,  /* xanh tím pastel dịu */
+            #f5d9ec   /* hồng pastel nhạt */
+            );
+            padding: 40px 20px;
+            color: #445;
+}
 
 .image1 {
     width: 400;            /* Chiều rộng tự động để duy trì tỷ lệ */
