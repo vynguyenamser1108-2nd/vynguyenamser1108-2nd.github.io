@@ -166,7 +166,7 @@ h2 {
 }
 
 .rounded-image {
-    height: 140px;          /* Chiều cao cố định cho tất cả ảnh */
+    height: 120px;          /* Chiều cao cố định cho tất cả ảnh */
     width: auto;            /* Chiều rộng tự động để duy trì tỷ lệ */
     border-radius: 14px;    /* Bo góc nhẹ với bán kính 14px */
     display: inline-block;
